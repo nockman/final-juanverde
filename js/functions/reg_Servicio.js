@@ -268,7 +268,14 @@ $(document).ready(function(){
       $('#txt_EditarCategoria').val('');
       $('#txt_EditarNota').val('');
    }
+   
+   $("#ext-link").click(function() {
+    if (typeof navigator !== "undefined" && navigator.app) {
+        // Mobile device.
+        navigator.app.loadUrl('https://www.paypal.com/mx/cgi-bin/webscr?cmd=_flow&SESSION=BkhzvFz1TzxJSsAklDZgJJiQJDbHwjxI3PdtNTXLe1N99Uz-2MsWct27LA8&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationStart&rapidsStateSignature=78f5f6e6221117f19b05733851381414f7331a4f', {openExternal: true});
+    } else {
+        // Possible web browser
+        window.open("https://www.paypal.com/mx/cgi-bin/webscr?cmd=_flow&SESSION=BkhzvFz1TzxJSsAklDZgJJiQJDbHwjxI3PdtNTXLe1N99Uz-2MsWct27LA8&dispatch=5885d80a13c0db1f8e263663d3faee8d83a0bf7db316a7beb1b14b43acd04037&rapidsState=Donation__DonationFlow___StateDonationStart&rapidsStateSignature=78f5f6e6221117f19b05733851381414f7331a4f", "_blank");
+    }
+   });
 });
-
-
-

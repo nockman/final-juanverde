@@ -70,8 +70,8 @@
     <div data-role="navbar">
       <ul>
         <li><a href="#home" data-icon="arrow-l" data-theme="b" data-transition="flip">Atras</a></li>
-        <li><a href="#home" data-icon="home" data-theme="b" data-transition="pop">Inicio</a></li>
-        <li><a href="#info" data-icon="info" data-role="button"data-theme="b">Info</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b" data-transition="flip">Inicio</a></li>
+        <li><a href="#info" data-icon="info" data-role="button" data-theme="b">Info</a></li>
         <li><a href="#Acerca" data-icon="arrow-r" data-theme="b" data-transition="flip">Siguiente</a></li>
       </ul>
     </div>
@@ -93,8 +93,8 @@
  	    <div data-role="navbar">
       <ul>
         <li><a href="#pag_AgregarServicio" data-icon="arrow-l" data-theme="b" data-transition="flip">Atras </a> </li>
-        <li><a href="#home" data-icon="home" data-theme="b" data-transition="pop">Inicio</a></li>
-        <li><a href="#info" data-icon="info" data-role="button"data-theme="b">Info</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b" data-transition="flip">Inicio</a></li>
+        <li><a href="#info" data-icon="info" data-role="button" data-theme="b">Info</a></li>
         <li><a href="#pag_EditarServicio" data-icon="arrow-r" data-theme="b" data-transition="flip">Siguiente </a> </li>        
       </ul>
     </div>
@@ -142,8 +142,8 @@
  	<div data-role="navbar">
       <ul>
         <li><a href="pag_InfoServicio" data-icon="arrow-l" data-theme="b" data-transition="flip">Atras</a></li>
-        <li><a href="#home" data-icon="home" data-theme="b" data-transition="pop">Inicio</a></li>
-        <li><a href="#info" data-icon="info" data-role="button"data-theme="b">Info</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b" data-transition="flip">Inicio</a></li>
+        <li><a href="#info" data-icon="info" data-role="button" data-theme="b">Info</a></li>
         <li><a href="#Acerca" data-icon="arrow-r" data-theme="b" data-transition="flip"> Siguiente</a></li>
       </ul>
   </div>
@@ -168,7 +168,12 @@
            
         </center>
 <div align="center">
-<button id="ext-link" href="#"> unonas </a>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" id="submit">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="F6KAW3PHDVV88">
+<input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donate_SM.gif" border="0" id="submit" name="submit" width="20%" alt="PayPal, la forma más segura y rápida de pagar en línea.">
+<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+</form>
 </div>
         
   </div>
@@ -179,8 +184,8 @@
   <div data-role="navbar">
       <ul>
         <li><a href="#home" data-icon="arrow-l" data-theme="b" data-transition="flip">Atras</a></li>
-        <li><a href="#home" data-icon="home" data-theme="b" data-transition="pop">Inicio</a></li>
-        <li><a href="#info" data-icon="info" data-role="button"data-theme="b">Info</a></li>
+        <li><a href="#home" data-icon="home" data-theme="b" data-transition="flip">Inicio</a></li>
+        <li><a href="#info" data-icon="info" data-role="button" data-theme="b">Info</a></li>
         <li><a href="#pag_AgregarServicio" data-icon="arrow-r" data-theme="b" data-transition="flip">Siguiente</a></li>
       </ul>
     </div>
@@ -204,7 +209,9 @@
 
   </div>
 </div>
+
 <!--<script src="js/jquery.min.js"></script>-->
 <script src="js/functions/reg_Servicio.js"></script>
+ <script type="text/javascript" src="js/paypal-mobile-js-helper.js"></script>
 </body>
 </html>

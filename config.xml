@@ -3,7 +3,7 @@
     xmlns:gap = "http://phonegap.com/ns/1.0"
     id        = "com.phonegap.jjvo"
     version   = "1.0.0">
-
+<gap:plugin name="com.paypal.cordova.mobilesdk" source="npm" />
 <name>Aplicación Final Juan Verde</name>
 <icon src="agenda.png" gap:platform="android" gap:density="hdpi" />
 <description>
